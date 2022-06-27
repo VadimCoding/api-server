@@ -89,5 +89,4 @@ func main() {
 
 	log.Println("Listening on port 4200...")
 	log.Fatal(http.ListenAndServe(":4200", router))
-
 }
