@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: 'Get Last tag'
-        id: lasttag
+        id: last-tag
         uses: "WyriHaximus/github-action-get-previous-tag@v1"
 
       - name: DOCKER 1/2 - Login to DockerHub
@@ -37,4 +37,4 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: vadimdocker/api-server2:${{ steps.previoustag.outputs.tag }}
+          tags: vadimdocker/api-server2:${{ steps.last-tag.outputs.tag }}
