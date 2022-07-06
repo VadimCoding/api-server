@@ -1,19 +1,20 @@
-# api-server
+# Api-Server
 A small api-server in Go
 
-## What is it ?
-I'm exposing 2 endpoints: 
+## What it is ?
+Simply 2 API endpoints: 
 - /ready
 - /{param}
 
 ### /ready
 **Method**: GET
+
 **Returns**: {"status": "ok"}
 
 ### /{param}
 **Method**: GET
 
-**Description**: The transformation of the "param" pass in argument of the request from the funciton word2Number, which transform a word/sentence in its number equivalent ("abc" -> 123, "aba" -> 121, "Dad" -> 414)
+**Description**: The result of `param` pass in argument the funciton word2Number, which transform a word/sentence in its number equivalent ("abc" -> 123, "aba" -> 121, "Dad" -> 414)
 Returns: {"result": STRING}
 
 ## How to use it ?
@@ -25,9 +26,9 @@ Returns: {"result": STRING}
 
 ### From docker image
 You can choose to directly use the docker image and run it in a container.
-1. Get the image from `docker pull vadimdocker/api-server2:latest`
+1. Get the image from `docker pull vadimdocker/api-server2`
 2. Run it with `docker run vadimdocker/api-server2` 
 3. Depending on your hosting configuration for docker, you might need to expose ports.
 
 ## CI/CD
-The CI is builind and pushing a new image when a new version of the code is produce on main with a tag. The git tag will be use for the image version.
+The CI is builind and pushing a new image when a new version of the code is produce on main with a tag. The git tag will be use for the image version on dockerhub.
