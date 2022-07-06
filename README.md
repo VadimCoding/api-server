@@ -16,16 +16,16 @@ Simply 2 API endpoints:
 
 **Description**: The result of `param` pass in argument the funciton word2Number, which transform a word/sentence in its number equivalent ("abc" -> 123, "aba" -> 121, "Dad" -> 414)
 
-Returns: {"result": STRING}
+**Returns**: {"result": STRING}
 
 ## How to use it ?
-### Source code
+### From Source code
 1. Pull the code
 2. Go in the /app folder `cd app`
 3. Launch the binary `go run main.go` or build the binary first `go build -o api-server` and then run it `./api-server`
 4. Once you'll see `Listening on port 4200...` you can test the endpoint with your local browser with `http://localhost:4200/ready`
 
-### From docker image
+### From Docker image
 You can choose to directly use the docker image and run it in a container.
 1. Get the image from `docker pull vadimdocker/api-server2`
 2. Run it with `docker run vadimdocker/api-server2` 
