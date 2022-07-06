@@ -15,6 +15,7 @@ Simply 2 API endpoints:
 **Method**: GET
 
 **Description**: The result of `param` pass in argument the funciton word2Number, which transform a word/sentence in its number equivalent ("abc" -> 123, "aba" -> 121, "Dad" -> 414)
+
 Returns: {"result": STRING}
 
 ## How to use it ?
